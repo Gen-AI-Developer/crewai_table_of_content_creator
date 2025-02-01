@@ -1,0 +1,17 @@
+write_toc:
+  description: >
+    Write a detialed table of content for a blog post about {topic}.
+    Ensure the  table of content for the blog is engaging and adheres to SEO's rules and Guidelines.
+  expected_output: >
+    A beautifully crafted table of content for a blog post about {topic}.
+    Use Keyword relavent to the topic {topic} in Heading and Sub-Heading to make it SEO Friendly.
+  agent: toc_writer
+
+write_blog:
+  description: >
+    Write a blog on {topic}.
+    Ensure the blog is engaging and adheres to the specified word count of {word_count}.
+  expected_output: >
+    A beautifully crafted blog post about {topic}, with exactly {word_count} sentences.
+    Use Keyword relavent to the topic {topic} in Heading and Sub-Heading to make it SEO Friendly.
+  agent: blog_writer
