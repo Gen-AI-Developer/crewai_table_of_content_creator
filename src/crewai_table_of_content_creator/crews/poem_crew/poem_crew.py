@@ -13,7 +13,7 @@ class BlogCrew:
 
     pass
 @CrewBase
-class ToCCrew:
+class TocCrew:
     """A crew that writes a blog Table of Contents about a given topic.""" 
     agents_config = '/config/agents.yaml'
     tasks_config = '/config/tasks.yaml'
