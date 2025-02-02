@@ -14,7 +14,7 @@ class BlogCrew:
     @agent
     def blog_writer(self)-> Agent:
         return Agent(
-            config = self.agents_config['blog_writer']
+            config = self.agents_config["blog_writer"]
         )
     @task
     def write_blog_post(self) -> Task:

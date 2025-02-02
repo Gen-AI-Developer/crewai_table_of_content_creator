@@ -19,13 +19,13 @@ class TOCFlow(Flow[TocState]):
 
     @start()
     def generate_toc(self): # -> TocState:
-        result = (TocCrew().crew().kickoff(input={"topic": self.state.topic}))
+        result = (TocCrew().crew().kickoff(inputs={"table_of_contents": self.state.table_of_contents}))
         self.state.table_of_contents = result.raw
 
-class BlogFlow(Flow[BlogState],Flow[TocState]):
+class BlogFlow(Flow[BlogState]):
     @start()
     def generate_blog_post(self): # -> BlogState:
-        result = (BlogCrew().crew().kickoff(input={"word_count": self.state.word_count, "table_of_contents": self.state.table_of_contents}))
+        result = (BlogCrew().crew().kickoff(inputs={"word_count": self.state.word_count, "table_of_contents": TocState.table_of_contents, "topic": self.state.topic}))
         self.state.blog_post = result.raw
         
     @listen(generate_blog_post)

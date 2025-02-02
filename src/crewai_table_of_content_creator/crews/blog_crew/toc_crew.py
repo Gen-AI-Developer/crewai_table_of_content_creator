@@ -8,7 +8,7 @@ from crewai.project import CrewBase, agent, crew, task
 @CrewBase
 class TocCrew:
     """A crew that writes a blog Table of Contents about a given topic.""" 
-    agent_config = 'config/agents.yaml'
+    agents_config = 'config/agents.yaml'
     tasks_config = 'config/tasks.yaml'
 
     @agent
@@ -19,7 +19,7 @@ class TocCrew:
     @task
     def write_toc(self) -> Task:
         return Task(
-            config = self.tasks_config["write_toc"],
+            config = self.tasks_config['write_toc']
         )
     @crew
     def crew(self) -> Crew:

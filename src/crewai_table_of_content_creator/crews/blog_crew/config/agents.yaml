@@ -1,4 +1,4 @@
-blog_writer:
+blog_writer: 
   role: >
     CrewAI Blog Writer
   goal: >
