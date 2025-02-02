@@ -24,10 +24,10 @@ class BlogCrew:
     @crew
     def blog_crew(self) -> Crew:
         return Crew (
-            agents=self.agents,
-            tasks=self.tasks,
-            process = Process.sequential,
-            verbos= True,
-            
-        )
+    agents=self.agents,
+    tasks=self.tasks,
+    process = Process.sequential,
+    verbos= True,
+)
+
 
