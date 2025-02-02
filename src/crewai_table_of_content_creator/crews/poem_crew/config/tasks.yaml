@@ -7,7 +7,7 @@ write_toc:
     Use Keyword relavent to the topic {topic} in Heading and Sub-Heading to make it SEO Friendly.
   agent: toc_writer
 
-write_blog:
+write_blog_post:
   description: >
     Write a blog on {topic}.
     Ensure the blog is engaging and adheres to the specified word count of {word_count}.
