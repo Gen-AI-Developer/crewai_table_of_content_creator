@@ -8,8 +8,8 @@ from crewai.project import CrewBase, agent, crew, task
 @CrewBase
 class BlogCrew:
     """A crew that writes a blog post about a given Table of Contents."""
-    agents_config = '/config/agents.yaml'
-    tasks_config = '/config/tasks.yaml'
+    agents_config = 'config/agents.yaml'
+    tasks_config = 'config/tasks.yaml'
 
     @agent
     def blog_writer(self)-> Agent:

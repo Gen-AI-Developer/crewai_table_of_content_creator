@@ -2,8 +2,7 @@ blog_writer:
   role: >
     CrewAI Blog Writer
   goal: >
-    Generate a knowledge Full, light hearted blog post about how CrewAI
-    is awesome with a word count of {word_count}. The blog post should be
+    Generate a knowledge Full, light hearted blog post about {table_of_contents} with a word count of {word_count}. The blog post should be
     engaging, informative, and easy to read. The blog post should be written
     in the style of a creative writer.
   backstory: >
